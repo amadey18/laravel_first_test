@@ -1,0 +1,124 @@
+/*
+    css for template site
+*/
+/* 
+    Created on : 02.07.2015, 16:02:35
+    Author     : ivchenkoserhii
+*/
+body {
+        margin:0;
+        font-family: sans-serif;
+        text-align:center;
+        /*color: #999;*/
+}
+.container{
+    text-align: left;
+}
+.logged_in{
+    color: #999;
+}
+
+.block_example{
+    padding:15px;
+    margin:5px;
+    border: 1px solid black;
+}
+
+
+/* navigation */
+.navigation_main_block {
+    background-color: #3A4F63;
+    clear: both;
+    width: 100%;
+    height: 37px;
+}
+.navigation_main
+{
+    /*
+        background: #FFDAB9;
+        list-style: none;
+        /*width: 100%;
+        text-align: left;
+        margin: 0 ;
+        padding-left: 0;*/
+    float: left;
+    list-style: none outside none;
+    margin: 0;
+    padding: 4px 0 4px 8px;
+    position: relative;
+    width: auto;
+}
+.navigation_main li
+{
+    float: left;
+    position: relative;
+    /*
+        position: relative;
+        padding: 0;
+        display: inline-block;
+        height: 43px;
+        vertical-align: middle; 
+        margin-left: -6px;
+        border-right: 1px solid rgb(158, 158, 158);
+        border-left: 1px solid rgb(158, 158, 158);*/
+}
+.navigation_main li a
+{
+    background-color: #465C71;
+    border: 1px solid #4E667D;
+    color: #DDE4EC;
+    display: block;
+    font-size: 14px;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    /*
+        color: #0000FF;
+        display: block;
+        text-decoration:none;
+        font-size: 20px;
+        padding: 10px;*/
+}
+.navigation_main li a:hover
+{
+    background-color: #BFCBD6;
+    color: #465C71;
+    text-decoration: none;
+    /*
+        background-color: rgb(152,152,152);*/
+}
+/*block of li hidden*/
+.navigation_main li ul.sub{
+    visibility: hidden;
+    list-style: none;
+
+    z-index: 1000;
+    padding: 0;
+    margin-left: -1px;
+    left: 0;
+    top: 29px;
+    position:absolute;
+    opacity: 0;
+}
+
+.navigation_main li ul.sub li{
+    width: 100%;
+}
+.navigation_main li ul.sub li a{
+}
+.navigation_main ul a{
+    white-space: nowrap;
+    display: block;
+}
+/*show menu*/
+.navigation_main li:hover ul.sub{
+    float: none;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1000;
+}
+/*ebd of navigation*/
+
+
+
